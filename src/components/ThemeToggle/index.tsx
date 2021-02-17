@@ -5,7 +5,7 @@ const ThemeToggle: React.FunctionComponent = () => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
 
-  React.useEffect(() => setMounted(true))
+  React.useEffect(() => setMounted(true), [])
 
   return (
     <button
