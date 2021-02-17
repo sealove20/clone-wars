@@ -1,9 +1,8 @@
 import * as React from 'react'
+import Header from '@/components/Header'
 
 const Home: React.FunctionComponent = () => {
-  return (
-    <div className="bg-gray-300 h-24"></div>
-  )
+  return <Header />
 }
 
 export default Home
