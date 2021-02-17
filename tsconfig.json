@@ -17,12 +17,14 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "isolatedModules": true,
+    "rootDir": "src",
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"]
     }
   },
   "include": [
+    "src",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
