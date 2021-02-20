@@ -16,7 +16,7 @@ This project was developed with the following technologies:
 
 - [React][reactjs]
 - [TypeScript][typescript]
-- [Tail Wind CSS][tailwindcss]
+- [TailWindCSS][tailwindcss]
 - [NextJS][nextjs]
 
 ## :information_source: How To Use
