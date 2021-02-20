@@ -3,10 +3,13 @@ import axios from 'axios'
 import Header from '@/components/Header'
 import Paginator from '@/components/Paginator'
 
+import { FiSearch } from 'react-icons/fi'
+
 const Home: React.FunctionComponent = () => {
   const [characters, setCharacters] = React.useState([])
   const [loading, setLoading] = React.useState(false)
   const [pageCount, setPageCount] = React.useState(0)
+  const [search, setSearch] = React.useState('')
 
   const fetchCharacters = async (): Promise<void> => {
     try {
@@ -30,8 +33,18 @@ const Home: React.FunctionComponent = () => {
     }
   }
 
+  const handleSearchChange = (event): void => {
+    const value = event.target.value
+
+    setSearch(value)
+  }
+
   const handlePageClick = (data: number): void => {
     fetchMoreCharacters(data + 1)
+  }
+
+  const getFilteredCharacters = (): any => {
+    return characters.filter(character => character.name.toLowerCase().includes(search.toLowerCase()))
   }
 
   React.useEffect(() => {
@@ -48,10 +61,18 @@ const Home: React.FunctionComponent = () => {
       <section className="flex justify-center">
         <h1 className="text-5xl mt-4 whitespace-nowrap">Clone Wars</h1>
       </section>
-      <section className="flex flex-wrap justify-center items-center mt-10">
-        {characters.map(character => (
-        <div key={character.name} className="h-64 w-64 dark:bg-gray-100 shadow-lg rounded-md my-5">
-          <div className="flex justify-center bg-yellow-200 dark:bg-yellow-700 rounded-t-md">
+      <section className="flex flex-wrap justify-center items-center mt-10 sm:bg-red-500">
+        <input
+          className="bg-yellow-200 border-yellow-400 dark:bg-yellow-700 border-2 rounded-l-md p-2 placeholder-gray-500 dark:placeholder-gray-300"
+          type="text"
+          placeholder="Search"
+          value={search}
+          onChange={handleSearchChange}
+        />
+        <button className="bg-blue-400 text-blue-50 rounded-r-md"><FiSearch className="h-11 w-7"/></button>
+        {getFilteredCharacters().map(character => (
+        <div key={character.name} className="h-72 w-72 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow-lg rounded-md my-5 hover:scale-50">
+          <div className="flex justify-center bg-yellow-200 dark:bg-yellow-700 rounded-t-md shadow-lg">
             <h2 className="text-2xl text-center h-20">{character.name}</h2>
           </div>
         </div>
