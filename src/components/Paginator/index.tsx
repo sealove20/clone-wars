@@ -19,8 +19,8 @@ const Paginator: React.FunctionComponent<Props> = ({ pageCount, handlePageClick 
       marginPagesDisplayed={2}
       pageRangeDisplayed={1}
       onPageChange={(data) => handlePageClick(data.selected)}
-      containerClassName={'flex list-none p-0'}
-      pageClassName={'mx-4'}
+      containerClassName={'flex list-none p-0 cursor-pointer'}
+      pageClassName={'mx-4 cursor-pointer'}
       pageLinkClassName={'outline-none'}
       activeClassName={'bg-blue-300 dark:bg-blue-500 rounded-2xl h-6 w-6 flex justify-center'}
       initialPage={0}
