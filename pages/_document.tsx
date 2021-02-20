@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
               crossOrigin=""
             />
         </Head>
-        <body className="bg-white text-black dark:bg-black dark:text-white">
+        <body className="bg-white text-black dark:bg-gray-700 dark:text-white">
           <Main />
           <NextScript />
         </body>
