@@ -15,7 +15,6 @@ const Home: React.FunctionComponent = () => {
       setLoading(true)
       const response = await axios.get('https://swapi.dev/api/people/')
       setCharacters(response.data.results)
-      console.log(response.data)
       setPageCount(Math.ceil(response.data.count / response.data.results.length))
       setLoading(false)
     } catch (error) {
