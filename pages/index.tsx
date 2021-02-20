@@ -62,7 +62,7 @@ const Home: React.FunctionComponent = () => {
           <h1 className="text-5xl mt-4 whitespace-nowrap">Clone Wars</h1>
         </section>
         <Search search={search} handleSearchChange={handleSearchChange} searchStyle="mt-8"/>
-        <section className="flex flex-wrap justify-center items-center mt-10 sm:justify-around lg:max-w-screen-lg ">
+        <section className="flex flex-wrap justify-center items-center mt-10 sm:justify-around lg:max-w-screen-lg">
         {getFilteredCharacters().map(character => (
           <div key={character.name} className="h-72 w-72 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow-lg rounded-md my-5 hover:scale-50">
             <div className="flex justify-center bg-yellow-200 dark:bg-yellow-700 rounded-t-md shadow-lg">
