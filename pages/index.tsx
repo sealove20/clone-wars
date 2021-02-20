@@ -52,7 +52,7 @@ const Home: React.FunctionComponent = () => {
   }, [])
 
   if (loading) {
-    return <div className="flex justify-center items-center h-screen text-9xl">LOADING</div>
+    return <div className="flex justify-center items-center h-screen text-5xl">loading</div>
   }
 
   return (
