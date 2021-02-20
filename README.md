@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Clone Wars
 
-## Getting Started
+## 💻 Project
 
-First, run the development server:
+Clone Wars is a good way to search information about your favorite Star Wars Characters.
+You can access the live application [Here][here].
+
+<h1 align="center">
+    <img alt="Example" title="Example" src=".github/capa.svg" width="500px" />
+</h1>
+
+
+## :rocket: Technologies
+
+This project was developed with the following technologies:
+
+- [React][reactjs]
+- [TypeScript][typescript]
+- [Tail Wind CSS][tailwindcss]
+- [NextJS][nextjs]
+
+## :information_source: How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js][nodejs] + [Yarn][yarn] installed on your computer.
+
+From your command line:
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this repository
+$ git clone https://github.com/sealove20/clone-wars
+
+# Go into the repository
+$ cd clone-wars
+
+# Install dependencies
+$ yarn install
+
+# Start server
+$ yarn dev
+
+# running on port 3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Test
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can run the tests with the command:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+```bash
+$ yarn test
+```
 
-To learn more about Next.js, take a look at the following resources:
+=)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[nextjs]: https://nextjs.org/
+[tailwindcss]: https://tailwindcss.com/
+[typescript]: https://www.typescriptlang.org/
+[reactjs]: https://reactjs.org
+[yarn]: https://yarnpkg.com/
+[nodejs]: https://nodejs.org/
+[here]: https://clone-wars-pb2jsyx77.vercel.app/
