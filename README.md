@@ -6,7 +6,7 @@ Clone Wars is a good way to search information about your favorite Star Wars Cha
 You can access the live application [Here][here].
 
 <h1 align="center">
-    <img alt="Example" title="Example" src=".github/capa.svg" width="500px" />
+    <img alt="Example" title="Example" src=".github/capa.png" width="500px" />
 </h1>
 
 
